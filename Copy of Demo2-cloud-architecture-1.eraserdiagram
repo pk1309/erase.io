@@ -1,0 +1,56 @@
+cloud-architecture-diagram
+
+Region [icon: aws-region] {
+
+    vpc [icon: aws-vpc] {
+
+        Application Load Balancer [icon: aws-alb] {
+            80 [icon: ]
+            8443 [icon: ]
+        }
+
+        Subnet [icon: aws-Subnet] {
+            Security Group [icon: aws-security-group] {
+                EC2 Instance [icon: aws-ec2] {
+
+                }
+            }
+        }
+
+        Subnet2 [icon: aws-Subnet] {
+            Security Group2 [icon: aws-security-group] {
+                EC2 Instance2 [icon: aws-ec2] {
+
+                }
+            }
+        }
+
+        Subnet3 [icon: aws-Subnet] {
+            Security Group3 [icon: aws-security-group] {
+                EC2 Instance3 [icon: aws-ec2] {
+
+                }
+            }
+        }
+
+        Subnet4 [icon: aws-Subnet] {
+            Security Group4 [icon: aws-security-group] {
+                EC2 Instance4 [icon: aws-ec2] {
+
+                }
+            }
+        }
+
+
+        DB Subnet [icon: aws-subnet-private] {
+            DB Security Group {
+                Mysql [icon: aws-rds]
+            }
+        }
+
+    }
+
+}
+
+Application Load Balancer <> Subnet,Subnet2,Subnet3,Subnet4
+Subnet,Subnet2,Subnet3,Subnet4 <> Mysql
