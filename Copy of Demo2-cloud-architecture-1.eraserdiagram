@@ -54,3 +54,8 @@ Region [icon: aws-region] {
 
 Application Load Balancer <> Subnet,Subnet2,Subnet3,Subnet4
 Subnet,Subnet2,Subnet3,Subnet4 <> Mysql
+
+legend [position: bottom-right]{
+  [icon: aws-alb, label: Application Load Balancer]
+  [icon: aws-ec2, label: EC2 Instance]
+}
